@@ -1,0 +1,48 @@
+.wp-badge.ad_kangaroo-logo {
+    color: #fff;
+    background-image: url(../images/macho-themes-logo.svg);
+    background-position: center center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.nav-tab .ad_kangaroo_ads {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    margin-left: 10px;
+    line-height: 19px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    background: #bbbbbb;
+}
+.ad_kangaroo-ads-list {
+	position: relative;
+}
+.ad_kangaroo-ads-list:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s;
+	background-color: rgba( 255,255,255,.5 );
+}
+.ad_kangaroo-ads-list.waiting:before {
+	visibility: visible;
+	opacity: 1;
+}
+.ad_kangaroo-ads-list.waiting .spinner {
+	visibility: visible;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
